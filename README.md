@@ -1,5 +1,5 @@
 # cmt-catalog-qgis
-The hastely-made implementation of GlobalCMT catalog on QGIS for your convenience.
+A hastely-made implementation of GlobalCMT catalog on QGIS for your convenience.
 ![Sample image](https://github.com/geoign/cmt-catalog-qgis/blob/main/samplescreenshot.jpg)
 
 ## Product detail
