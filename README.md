@@ -19,7 +19,7 @@ Note: The following steps show how-to in QGIS 3.28.1.
 7. Find textbox to choose the path to SVG files. Click "ε" and choose edit to open a textbox.
    ![showing steps 2](https://github.com/geoign/cmt-catalog-qgis/blob/main/screengrab3.jpg)
 8. In the textbox, you need to specify the path to the extracted SVG file. 
-   For example, type *'E:\\GIS\\Seismicity\\GlobalCMT\\' || "imgfile"* if the SVG files have the path E:\GIS\Seismicity\GlobalCMT\CMTimages\*.svg. 
+   For example, type *'E:\\GIS\\Seismicity\\GlobalCMT\\' || "imgfile"* if the SVG files have the path E:\GIS\Seismicity\GlobalCMT\CMTimages\\*.svg. 
 9. Click OK to close the windows. Done!
 
 ## Disclaimer
