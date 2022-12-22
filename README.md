@@ -5,22 +5,25 @@ A hastely-made implementation of GlobalCMT catalog on QGIS for your convenience.
 ## Product detail
 All data is based on ![GlobalCMT](https://www.globalcmt.org/).
 ![Obspy](https://docs.obspy.org/) is used for extracting GlobalCMT data.
-In this implementation, earthquakes larger than M4 between the period of 1991-2020 (30 years) are included.
+~~In this implementation, earthquakes larger than M4 between the period of 1991-2020 (30 years) are included.~~
+Now it covers all events in GlobalCMT catalog as of Dec. 2022.
 
 ## Installation
 Note: The following steps show how-to in QGIS 3.28.1. 
-1. Download ![GlobalCMT-M4-1991-2020.gpkg](https://github.com/geoign/cmt-catalog-qgis/blob/main/GlobalCMT-M4-1991-2020.gpkg). This file contains the table (id, latitude, longitude, magnitude, depth, image file name). 
-2. Download ![a ZIP file containing SVG images (Google Drive)](https://drive.google.com/file/d/1YIS7r06jmMpaXapfmDQdW7KwuBJKHyio/view?usp=share_link). Note that these images consumes 23.2 GB of your disk space when they get extracted!!!.
-3. Extract the ZIP file. You will find 46k SVG images in CMTimages folder.
-4. Open GlobalCMT-M4-1991-2020.gpkg on QGIS.
-5. Proceed layer properties -> Symbology. If you are a Pro of QGIS, you may choose "graduated" symbology and then type *case when "mag" > 7 then case when "dep" < 30 then "mag" end end* to the "Value". If you are new to QGIS, choose "single". 
-6. Marker setting. You need to click the second row (1) and choose "SVG marker" (2). Then scroll down to the bottom.
-   ![showing steps 1](https://github.com/geoign/cmt-catalog-qgis/blob/main/screengrab2.jpg)
+1. Download ![GlobalCMT-All.gpkg](https://github.com/geoign/cmt-catalog-qgis/blob/main/GlobalCMT-All.gpkg). This file contains the table (id, latitude, longitude, magnitude, depth, image file name). 
+2. Download ![a ZIP file containing SVG images (Google Drive)](https://drive.google.com/file/d/1eyFN9rPi6tNDi8nPYqlECI6mo2zioISg/view?usp=share_link). Note that these images consumes **28 GB** of your disk space when they get extracted!!!.
+3. Download ![QGIS Style file](https://github.com/geoign/cmt-catalog-qgis/blob/main/globalcmt-style-M7-30km.qml). This file allows to do the basic seup for the gpkg layer.
+4. Extract the ZIP file. You will find 57k SVG images in CMTimages folder. Remember where you place them.
+5. Open GlobalCMT-All.gpkg on QGIS. Proceed **layer properties -> Style -> Import style**. Choose **globalcmt-style-M7-30km.qml** which was downloaded earlier and apply it to the gpkg layer.
+8. Next, choose **Symbology** and click the marker. The marker setting window will pop up. Scroll to the bottom. 
 7. Find textbox to choose the path to SVG files. Click "ε" and choose edit to open a textbox.
    ![showing steps 2](https://github.com/geoign/cmt-catalog-qgis/blob/main/screengrab3.jpg)
-8. In the textbox, you need to specify the path to the extracted SVG file. 
-   For example, type *'E:\\GIS\\Seismicity\\GlobalCMT\\' || "imgfile"* if the SVG files have the path E:\GIS\Seismicity\GlobalCMT\CMTimages\\*.svg. 
-9. Click OK to close the windows. Done!
+8. In the textbox, you will find the following text in place. It is just an example.
+   *'E:\\GIS\\Seismicity\\GlobalCMT\\CMTimages\\' || "id" || '.svg'* 
+   You need to change it accodringly to the path to the SVG files which you extracted from the ZIP file.
+9. Click OK to close the all pop-ups. You will see several beachballs around the world.
+   By default, only the events with Depth<30 km and Mag>7 are shown. 
+   You may change it through modifying the filter in Layer properties -> Symbology -> Value. 
 
 ## Disclaimer
 These datasets are provided for conveniently view regional-scale trend in CMT solutions.
