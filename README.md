@@ -18,12 +18,11 @@ Note: The following steps show how-to in QGIS 3.28.1.
 8. Next, choose **Symbology** and click the marker. The marker setting window will pop up. Scroll to the bottom. 
 7. Find textbox to choose the path to SVG files. Click "ε" and choose edit to open a textbox.
    ![showing steps 2](https://github.com/geoign/cmt-catalog-qgis/blob/main/screengrab3.jpg)
-8. In the textbox, you will find the following text in place. It is just an example.
-   *'E:\\GIS\\Seismicity\\GlobalCMT\\CMTimages\\' || "id" || '.svg'* 
+8. In the textbox, you will find the text in place. 
    You need to change it accodringly to the path to the SVG files which you extracted from the ZIP file.
 9. Click OK to close the all pop-ups. You will see several beachballs around the world.
    By default, only the events with Depth<30 km and Mag>7 are shown. 
-   You may change it through modifying the filter in Layer properties -> Symbology -> Value. 
+   You may change it through modifying the filter in **Layer properties -> Symbology -> Value**. 
 
 ## Disclaimer
 These datasets are provided for conveniently view regional-scale trend in CMT solutions.
