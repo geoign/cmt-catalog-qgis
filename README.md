@@ -11,7 +11,7 @@ Now it covers all events in GlobalCMT catalog as of Dec. 2022.
 ## Installation
 Note: The following steps show how-to in QGIS 3.28.1. 
 1. Download ![GlobalCMT-All.gpkg](https://github.com/geoign/cmt-catalog-qgis/blob/main/GlobalCMT-All.gpkg). This file contains the table (id, latitude, longitude, magnitude, depth, image file name). 
-2. Download ![a ZIP file containing SVG images (Google Drive)](https://drive.google.com/file/d/1eyFN9rPi6tNDi8nPYqlECI6mo2zioISg/view?usp=share_link). Note that these images consumes **28 GB** of your disk space when they get extracted!!!.
+2. Download ![a ZIP file containing SVG images (Google Drive)](https://drive.google.com/file/d/1eyFN9rPi6tNDi8nPYqlECI6mo2zioISg/view?usp=share_link). Note that these images consume **28 GB** of your disk space when they get extracted!!!.
 3. Download ![QGIS Style file](https://github.com/geoign/cmt-catalog-qgis/blob/main/globalcmt-style-M7-30km.qml). This file allows to do the basic seup for the gpkg layer.
 4. Extract the ZIP file. You will find 57k SVG images in CMTimages folder. Remember where you place them.
 5. Open GlobalCMT-All.gpkg on QGIS. Proceed **layer properties -> Style -> Import style**. Choose **globalcmt-style-M7-30km.qml** which was downloaded earlier and apply it to the gpkg layer.
