@@ -3,8 +3,8 @@ A hastely-made implementation of GlobalCMT catalog on QGIS for your convenience.
 ![Sample image](https://github.com/geoign/cmt-catalog-qgis/blob/main/samplescreenshot.jpg)
 
 ## Product detail
-All data is based on ![GlobalCMT](https://www.globalcmt.org/).
-![Obspy](https://docs.obspy.org/) is used for extracting GlobalCMT data.
+All data is based on GlobalCMT https://www.globalcmt.org/ .
+Obspy https://docs.obspy.org/ is used for extracting GlobalCMT data.
 ~~In this implementation, earthquakes larger than M4 between the period of 1991-2020 (30 years) are included.~~
 Now it covers all events in GlobalCMT catalog as of Dec. 2022.
 
