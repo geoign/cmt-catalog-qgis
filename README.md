@@ -7,6 +7,7 @@ All data is based on GlobalCMT https://www.globalcmt.org/ .
 Obspy https://docs.obspy.org/ is used for extracting GlobalCMT data.
 ~~In this implementation, earthquakes larger than M4 between the period of 1991-2020 (30 years) are included.~~
 Now it covers all events in GlobalCMT catalog as of Dec. 2022.
+Sorry, I set the wrong link to the Google Drive ZIP file. Now it is fixed. (2025/02/01)
 
 ## Installation
 Note: The following steps show how-to in QGIS 3.28.1. 
